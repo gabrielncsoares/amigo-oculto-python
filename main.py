@@ -42,9 +42,9 @@ def enviar_email():
     corpo_email = f'{list(gabriel)[0].replace('Gabriel Soares', 'Você')}'
     msg = email.message.Message()
     msg['Subject'] = "Sorteio"
-    msg['From'] = 'gabrielnicsoares.business@gmail.com'
-    msg['To'] = 'gabinicsoares@gmail.com'
-    password = 'cwfn cche qvxu xvei' 
+    msg['From'] = 'e-mail de origem'
+    msg['To'] = 'e-mail de destino'
+    password = 'sua senha' 
     msg.add_header('Content-Type', 'text/html')
     msg.set_payload(corpo_email )
 
